@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" style="width: 40rem; margin: 8rem auto">
+      <div id="demo"></div>
+    </div>
+
+    <script type="module">
+      import { html, render } from 'lit';
+      import '../dist/proc-grid.js';
+
+      const size = 5;
+
+      render(
+        html` <proc-grid .size=${size}> some more light-dom </proc-grid> `,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>
