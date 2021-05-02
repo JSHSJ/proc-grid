@@ -1,0 +1,68 @@
+:root {
+  --ratio: 1.64;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  --measure: 64ch;
+
+  /* typo */
+
+  --font-family: 'Iosevka Aile', sans-serif;
+  --fontWeightRegular: 400;
+  --fontWeightBold: 600;
+  --line-height: var(--ratio);
+  --line-height-small: calc(0.8*var(--ratio))
+
+  /* border */
+
+  --border-thin: var(--s-5);
+  --border-thick: var(--s-2);
+
+
+
+  /* colors */
+
+  --color-opacity: 1;
+
+  --color-background-900: hsl(48, 14%, 78%);
+  --color-background-700: hsl(48, 14%, 93%);
+  --color-background-500: hsl(60, 14%, 96%);
+  --color-background-300: hsl(60, 20%, 99%);
+
+  --color-text-neutral-50: hsl(51, 14%, 48%);
+  --color-text-neutral-100: hsl(51, 14%, 24%);
+  --color-text-neutral-300: hsl(51, 14%, 10%);
+  --color-text-neutral-500: hsl(60, 13%, 6%);
+  --color-text-neutral-700: hsl(354, 56%, 4%);
+
+  --color-accent-500: rgb(202, 5, 77);
+  --color-errorDark: rgb(240, 53, 29);
+  --color-errorLight: rgb(251, 204, 197);
+
+
+  --backgroundColor: var(--color-background-500);
+
+  --textColor: var(--color-text-neutral-500);
+  --titleColor: var(--color-text-neutral-700);
+
+  --linkColor: var(--color-text-neutral-700);
+  --linkHoverColor: var(--color-accent-500);
+
+  --buttonColor: var(--backgroundColor);
+  --buttonBackgroundColor: var(--textColor);
+  --buttonBorderColor: var(--textColor);
+
+  --buttonDisabledBackgroundColor: var(--color-text-neutral-50);
+
+  --inputBorderColor: var(--color-text-neutral-500);
+  --inputPadding: var(--s0);
+}

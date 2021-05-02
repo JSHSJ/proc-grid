@@ -2,11 +2,7 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8" />
-    <style>
-      body {
-        background: #fafafa;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="" style="width: 40rem; margin: 8rem auto">
@@ -17,7 +13,7 @@
       import { html, render } from 'lit';
       import '../dist/proc-grid.js';
 
-      const size = 5;
+      const size = 10;
 
       render(
         html` <proc-grid .size=${size}> some more light-dom </proc-grid> `,
